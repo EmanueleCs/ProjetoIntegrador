@@ -5,7 +5,7 @@ body{
     margin: auto;
 }
 
-h2{
+#titlepeças{
     display: block;
     width: 100%;
 }
@@ -33,5 +33,9 @@ a{
 }
 
 #minigaleria{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 550px;
 }

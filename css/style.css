@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    width: 980px;
+    margin: auto;
+}
+
+h2{
+    display: block;
+    width: 100%;
+}
+
+#peças{
+    display: flex;
+    flex-wrap: wrap;
+    width: 790px;
+    align-items: start;
+    position: relative;
+    justify-content: flex-end;
+    margin: auto;
+    gap: 20px;
+}
+
+a{
+    justify-self: flex-end;
+    position: relative;
+}
+
+.pecinhas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+#minigaleria{
+    
+}

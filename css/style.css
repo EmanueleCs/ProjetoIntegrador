@@ -5,6 +5,28 @@ body{
     margin: auto;
 }
 
+.galery{
+    background-color: red;
+    height: 640px;
+    width: 940px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+.galery > figure{
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+.galery img{
+    display: block;
+}
+
 #titlepeças{
     display: block;
     width: 100%;

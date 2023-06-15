@@ -5,6 +5,17 @@ body{
     margin: auto;
 }
 
+/*Inicio página index*/
+
+#poster{
+    height: 300px;
+    width: 100%;
+    background-image: url(/images/ARTISTAS.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*fim página index*/
 .galery{
     background-color: red;
     height: 640px;

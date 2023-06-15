@@ -61,3 +61,7 @@ a{
     flex-wrap: wrap;
     height: 550px;
 }
+
+.tchau{
+    display: none;
+}

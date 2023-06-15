@@ -10,7 +10,7 @@ body{
 #poster{
     height: 300px;
     width: 100%;
-    background-image: url(/images/ARTISTAS.jpg);
+    background-image: url();
     background-size: cover;
     background-position: center;
 }

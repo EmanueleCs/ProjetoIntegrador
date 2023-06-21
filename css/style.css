@@ -1,16 +1,12 @@
 @charset "UTF-8";
 
-body{
-    margin: auto;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/*Inicio página index*/
-
-
-main article{
-    width: 980px;
-    margin: auto;
-}
+/*PÁGINA INDEX*/
 
 #poster{
     height: 400px;
@@ -20,7 +16,455 @@ main article{
     background-position: center;
 }
 
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+p, .botaoroxo,.botaorosa, h4{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mainormal{
+    width: 980px;
+    margin: auto;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    margin: auto;
+}
+
+.redessociais{
+    background-color: #A20021;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.redessociais img{
+    padding: 10px;
+}
+
+/*menu*/
+nav{
+    background-color: #1A1423;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.dropdown-menu menu{
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-menu li{
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-menu li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #E0002D;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-menu menu li:hover menu{
+    display: block;
+    background-color: #1A1423;
+}
+
+.dropdown-menu menu menu li a{
+    display: block;
+}
+
+/*corpo da página*/
+#companhia, #emcartaz{
+    width: 980px;
+    margin: auto;
+}
+
+/*a companhia*/
+#companhia{
+    padding: 10px 60px 20px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/*formatação peças*/
+
+#peças, #depoimentos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 550px;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    background-color: #A20021;
+    color: #F5F5F4;
+    border: solid #A20021 5px;
+}
+
+
+.pecinhas, .depoimentinhos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    margin: 10px;
+    position: relative;
+}
+
+#botaobottom{
+    position: absolute;
+    align-self: self-end;
+    right: 100px;
+}
+
+/*definições emcartaz index*/
+#emcartaz{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 60px 20px 60px;
+}
+
+#emcartaz section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#botaopeca{
+    align-self: flex-end;
+    position: absolute;
+    bottom: 100px;
+}
+/*FIM PÁGINA INDEX*/
+
+/*INÍCIO PÁGINA EM CARTAZ*/
+.mainormal{
+    width: 980px;
+    margin: auto;
+}
+
+#articleindex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*bloco sinopse página Em cartaz*/
+
+#sinopse{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#sinopse p{
+    width: 60%;
+}
+
+/*Tabela Em Cartaz*/
+table{
+    color: #F5F5F4;
+    background-color: #1A1423;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: center;
+    border-spacing: 0px 0.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+#tabelona{
+    width: 200px;
+    margin: 0px;
+}
+
+#titletabelona{
+    height: 20px;
+    font-size: 0.8em;
+    background-color: #F58C14;
+    color: #1A1423;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabelinha .separador{
+    border-right: double #e7e6e5 4px;
+}
+
+.tabelinha tr td{
+    padding: 10px 1px 10px 5px;
+    line-height: 9px;
+}
+
+.local{
+    color: #F58C14;
+    font-weight: normal;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    text-align: center;
+    border-left: solid 1px #F5F5F4;
+    padding: 5px;
+}
+
+/*definições ficha técnica e elenco*/
+#footerpeça{
+    background-color: #A20021;
+    color: #F5F5F4;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#fichatec{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 40px;
+    align-items: center;
+    padding: 20px;
+}
+
+#elenco{
+    width: 420px;
+}
+
+#elenco section{
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(3, 140px);
+}
+
+#elenco section img{
+    border-radius: 50%;
+}
+
+#elenco section figure{
+    width: 80px;
+}
+
+#elenco section figcaption{
+    width: 100%;
+    text-align: center;
+}
+
+
+/*FIM PÁGINA EM CARTAZ*/
+
+/*INICIO PÁGINA LIVRO*/
+
+#articlelivro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#articlelivro aside{
+    display: flex;
+    justify-content: space-between;
+}
+/*FIM PÁGINA LIVRO*/
+
+/*INICIO PÁGINA DEPOIMENTOS*/
+.atores{
+    background-color: #A20021;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    color: #e7e6e5;
+    margin-top: 20px;
+}
+
+.conteudo{
+    display: flex;
+    text-align: left;
+    line-height: 1.4em;
+}
+
+.conteudo section{
+    padding: 0px 20px 0px 0px;
+}
+
+#articledepoimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*FIM PÁGINA DEPOIMENTOS*/
+
+/*INICIO PÁGINA REALIZAÇÕES*/
+.articlerealizacoes{
+    background-color: #A20021;
+    padding: 20px;
+    display: flex;
+    margin: 20px 0px;
+    border-radius: 20px;
+    color: #e7e6e5;
+}
+
+.articlerealizacoes section{
+    line-height: 1.4em;
+    padding: 0px 20px 0px 0px;
+}
+
+.articlerealizacoes section h3,h2{
+    margin: 10px 0px;
+}
+
+/*FIM PÁGINA REALIZAÇÕES*/
+
+/*INICIO PAGINA PEÇA*/
+#articlepeça{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.tamanhomax{
+    width: 980px;
+}
+
+#album{
+    color: #F5F5F4;
+    padding: 20px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #A20021;
+}
+
+#fotos{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#footerpeçap{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#fichatec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#elenco{
+    width: 420px;
+}
+
+#elenco section{
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(3, 140px);
+}
+
+.titlelenco{
+    width: fit-content;
+    margin: 0px;
+}
+
+.tchau{
+    display: none;
+}
+/*FIM PEAGINA PEÇA*/
+
+/*definições gerais*/
+.titleblock{
+    width: 100%;
+    display: block;
+}
+
+.tchau{
+    display: none;
+}
+
+/*GERAIS*/
+.botaorosa{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: solid #1A1423 1px;
+    border-radius: 5px;
+    background-color: #E0002D;
+    text-transform: uppercase;
+    color: #F5F5F4;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botaorosa:hover{
+    background-color: #1A1423;
+}
+
+.botaoroxo{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: solid #F5F5F4 1px;
+    border-radius: 5px;
+    background-color: #1A1423;
+    text-transform: uppercase;
+    color: #F5F5F4;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botaoroxo:hover{
+    border: solid #1A1423 1px;
+    background-color: #F5F5F4;
+    color: #1A1423;
+}
+
+.tchau{
+    display: none;
+}
 /*fim página index*/
+
 .galery{
     background-color: red;
     height: 640px;

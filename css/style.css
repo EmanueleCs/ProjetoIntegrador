@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+.tamanhomax{
+    width: 980px;
+}
 h1, h2, h3{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -15,62 +18,12 @@ p, .botaoroxo,.botaorosa, h4{
     font-family: 'Ubuntu', sans-serif;
 }
 
-/*GERAIS*/
-.botaorosa{
-    display: flex;
-    width: 100px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    border: solid #1A1423 1px;
-    border-radius: 5px;
-    background-color: #E0002D;
-    text-transform: uppercase;
-    color: #F5F5F4;
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-}
-
-.botaorosa:hover{
-    background-color: #1A1423;
-}
-
-.botaoroxo{
-    display: flex;
-    width: 100px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    border: solid #F5F5F4 1px;
-    border-radius: 5px;
-    background-color: #1A1423;
-    text-transform: uppercase;
-    color: #F5F5F4;
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-}
-
-.botaoroxo:hover{
-    border: solid #1A1423 1px;
-    background-color: #F5F5F4;
-    color: #1A1423;
-}
-
-.tchau{
-    display: none;
-}
-
-.titleblock{
-    width: 100%;
-    display: block;
-}
-
 .mainormal{
     width: 980px;
     margin: auto;
 }
 
-/*HEADER*/
+/*header*/
 
 header{
     width: 100%;
@@ -132,16 +85,13 @@ nav{
     display: block;
 }
 
-/*FIM HEADER*/
-
-/*INICIO PÁGINA INDEX*/
+/*PÁGINA INDEX*/
 
 #poster{
-    height: 400px;
     width: 100%;
+    height: 400px;
     background-image: url(/images/ARTISTAS.jpg);
     background-size: cover;
-    background-position: center;
 }
 
 #companhia, #emcartaz{
@@ -159,35 +109,17 @@ nav{
 
 /*formatação peças*/
 
-#pecas, #depoimentos{
+#depoimentos, #pecas{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 530px;
+    height: 550px;
     align-items: start;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     background-color: #A20021;
     color: #F5F5F4;
-    margin-bottom: 100px;
-    position: relative;
-}
-
-#pecas p, #depoimentos p{
-    margin-top: 15px;
-    font-size: 0.8em;
-    line-height: 1.4em;
-}
-
-#pecas h3, #depoimentos h3{
-    margin-top: 15px;
-    font-size: 0.9em;
-    font-weight: medium;
-    line-height: 1.4em;
-}
-
-#pecas h2, #depoimentos h2{
-    padding-left: 240px;
+    border: solid #A20021 5px;
 }
 
 .pecinhas, .depoimentinhos{
@@ -198,20 +130,13 @@ nav{
     position: relative;
 }
 
-.pecinhas p, .depoimentinhos p{
-    width: 200px;
-}
-
-#botaobottomp, #botaobottomd{
+#botaobottom{
     position: absolute;
     align-self: self-end;
-    right: 300px;
-    top: 560px;
-    margin-top: 20px;
+    right: 100px;
 }
 
-
-/*definições mini-galeria*/
+/*mini-galeria*/
 .galery{
     height: 640px;
     width: 940px;
@@ -219,7 +144,7 @@ nav{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 20px 0px;
+    margin: auto;
     position: relative;
 }
 
@@ -257,12 +182,23 @@ nav{
 /*FIM PÁGINA INDEX*/
 
 /*INÍCIO PÁGINA EM CARTAZ*/
+.mainormal{
+    width: 980px;
+    margin: auto;
+}
 
-#articleindex{
+#articleemcartaz{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+#articleemcartaz h1{
+    margin: 20px 0px;
+}
+
+#articleemcartaz h2{
+    width: 640px;
 }
 
 /*bloco sinopse página Em cartaz*/
@@ -271,7 +207,9 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
+    margin: 20px 0px;
 }
 
 #sinopse p{
@@ -324,24 +262,26 @@ table{
 }
 
 /*definições ficha técnica e elenco*/
-#footerpeça{
+.footerpeça{
     background-color: #A20021;
     color: #F5F5F4;
     width: 100%;
-    height: 600px;
+    height: 550px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    padding: 20px;
 }
 
-#fichatec{
+.fichatec{
     display: flex;
     flex-direction: column;
     width: 400px;
     margin-right: 40px;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
+    padding: 0px 20px;
+    line-height: 2.8em;
+    text-align: center;
 }
 
 #elenco{
@@ -367,7 +307,6 @@ table{
     text-align: center;
 }
 
-
 /*FIM PÁGINA EM CARTAZ*/
 
 /*INICIO PÁGINA LIVRO*/
@@ -387,11 +326,11 @@ table{
 /*INICIO PÁGINA DEPOIMENTOS*/
 .atores{
     background-color: #A20021;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     color: #e7e6e5;
     margin-top: 20px;
@@ -412,14 +351,17 @@ table{
     flex-direction: column;
     justify-content: center;
 }
+
+#articledepoimentos h1{
+    margin: 20px 0px;
+}
 /*FIM PÁGINA DEPOIMENTOS*/
 
 /*INICIO PÁGINA REALIZAÇÕES*/
-.articlerealizacoes, .articlerealizacoesr{
+.articlerealizacoes{
     background-color: #A20021;
     padding: 40px;
     display: flex;
-    align-items: flex-start;
     margin: 20px 0px;
     border-radius: 20px;
     color: #e7e6e5;
@@ -427,16 +369,11 @@ table{
 
 .articlerealizacoesr{
     background-color: #1A1423;
-}
-
-.articlerealizacoesr a{
+    padding: 40px;
+    display: flex;
+    margin: 20px 0px;
+    border-radius: 20px;
     color: #e7e6e5;
-    text-decoration: none;
-}
-
-.articlerealizacoesr a:hover{
-    color: #A20021;
-    text-decoration: none;
 }
 
 .articlerealizacoes section, .articlerealizacoesr section{
@@ -444,31 +381,36 @@ table{
     padding: 0px 20px 0px 0px;
 }
 
-.articlerealizacoes section h3, .articlerealizacoes section h2, .articlerealizacoesr section h3,h2{
+.articlerealizacoes section h3,h2{
     margin: 10px 0px;
 }
 
-.articlerealizacoes section h3, .articlerealizacoesr section h3, .articlerealizacoesr a{
+.articlerealizacoesr section h3,h2{
+    margin: 10px 0px;
+}
+
+.articlerealizacoesr section a{
+    color: #e7e6e5;
+    text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1em;
-    line-height: 1.4em;
+    margin: 10px 0px;
 }
 
 /*FIM PÁGINA REALIZAÇÕES*/
 
 /*INICIO PAGINA PEÇA*/
-#articlepeça{
+.articlepeça{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
 }
 
-.tamanhomax{
-    width: 980px;
+.footerpeçabranco{
+    background-color: #e7e6e5;
 }
 
-#album{
+.album{
     color: #F5F5F4;
     padding: 20px;
     width: 100%;
@@ -479,28 +421,32 @@ table{
     background-color: #A20021;
 }
 
+.album section{
+    width: 940px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.imagensdomeio{
+    width: 300px;
+    height: 200px;
+}
+
 #fotos{
     width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
-#footerpeçap{
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-}
 
-#fichatec{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+#fichatec h2{
+    text-align: left;
 }
 
 #elenco{
@@ -521,12 +467,59 @@ table{
 .tchau{
     display: none;
 }
-/*FIM PAGINA PEÇA*/
+/*FIM PEAGINA PEÇA*/
 
-/* #minigaleria{
+/*definições gerais*/
+.titleblock{
+    width: 100%;
+    display: block;
+}
+
+.tchau{
+    display: none;
+}
+
+/*GERAIS*/
+.botaorosa{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 550px;
-} */
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: solid #1A1423 1px;
+    border-radius: 5px;
+    background-color: #E0002D;
+    text-transform: uppercase;
+    color: #F5F5F4;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botaorosa:hover{
+    background-color: #1A1423;
+}
+
+.botaoroxo{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: solid #F5F5F4 1px;
+    border-radius: 5px;
+    background-color: #1A1423;
+    text-transform: uppercase;
+    color: #F5F5F4;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botaoroxo:hover{
+    border: solid #1A1423 1px;
+    background-color: #F5F5F4;
+    color: #1A1423;
+}
+
+.tchau{
+    display: none;
+}

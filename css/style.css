@@ -20,10 +20,15 @@
 h1, h2, h3{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    margin: 20px 0px;
 }
 
-p, .botaoroxo,.botaorosa, h4{
+p, .botaoroxo,.botaorosa, h4, figcaption{
     font-family: 'Ubuntu', sans-serif;
+}
+
+figcaption{
+    font-size: 0.7em;
 }
 
 .mainormal{
@@ -128,6 +133,11 @@ body > header nav{
     justify-content: flex-end;
 }
 
+#companhia h2, #emcartaz h2{
+    color: #E0002D;
+    margin: 20px auto;
+}
+
 /*formatação peças*/
 
 #depoimentos, #pecas{
@@ -143,6 +153,12 @@ body > header nav{
     border: solid var(--vermelho-escuro) 5px;
 }
 
+#depoimentos p, #pecas p{
+    line-height: 1.2em;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
 .pecinhas, .depoimentinhos{
     display: flex;
     flex-wrap: wrap;
@@ -151,10 +167,18 @@ body > header nav{
     position: relative;
 }
 
-#botaobottom{
+#botaobottom, #botaobottomd{
     position: absolute;
     align-self: self-end;
     right: 100px;
+}
+
+#depoimentos h3, #pecas h3{
+    margin-top: 0px;
+}
+
+#pecastitle, #depoimentostitle{
+    margin-left: 240px;
 }
 
 /*mini-galeria*/
@@ -165,8 +189,9 @@ body > header nav{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
-    margin: auto;
+    margin: 20px auto;
     position: relative;
+    color: #E0002D;
 }
 
 .galery img{
@@ -195,6 +220,10 @@ body > header nav{
     padding: 10px;
 }
 
+#emcartaz h3{
+    color: #F58C14;
+}
+
 #botaopeca{
     align-self: flex-end;
     position: absolute;
@@ -216,10 +245,13 @@ body > header nav{
 
 #articleemcartaz h1{
     margin: 20px 0px;
+    color: #E0002D;
 }
 
 #articleemcartaz h2{
     width: 640px;
+    color: #F58C14;
+    font-size: 1.3em;
 }
 
 /*bloco sinopse página Em cartaz*/
@@ -292,6 +324,7 @@ table{
     flex-direction: row;
     justify-content: center;
     padding: 20px;
+    margin-bottom: 40px;
 }
 
 .fichatec{
@@ -351,10 +384,10 @@ table{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 35px;
     text-align: center;
     color: #e7e6e5;
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .conteudo{
@@ -375,6 +408,11 @@ table{
 
 #articledepoimentos h1{
     margin: 20px 0px;
+    color: #E0002D;
+}
+
+.atores h4{
+    margin: 10px 0px;
 }
 /*FIM PÁGINA DEPOIMENTOS*/
 
@@ -402,11 +440,11 @@ table{
     padding: 0px 20px 0px 0px;
 }
 
-.articlerealizacoes section h3,h2{
+.articlerealizacoes section h3, .articlerealizacoes h2{
     margin: 10px 0px;
 }
 
-.articlerealizacoesr section h3,h2{
+.articlerealizacoesr section h3, .articlerealizacoes h2{
     margin: 10px 0px;
 }
 

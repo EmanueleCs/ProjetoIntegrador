@@ -1,0 +1,19 @@
+:root{
+    --amarelo: #F58C14;
+    --roxo: #1A1423;
+    --vermelho: #E0002D;
+    --vermelho-escuro: #A20021;
+    --branco: #F5F5F4;
+}
+
+/*Classes decorativas*/
+
+.caixavermelha{
+    background-color: var(--vermelho-escuro);
+    width: 980px;
+    
+}
+
+.caixaroxa{
+    background-color: var(--roxo);
+}

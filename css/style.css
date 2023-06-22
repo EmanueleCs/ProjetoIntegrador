@@ -6,16 +6,6 @@
     box-sizing: border-box;
 }
 
-/*PÁGINA INDEX*/
-
-#poster{
-    height: 400px;
-    width: 100%;
-    background-image: url(/images/ARTISTAS.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 h1, h2, h3{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -25,12 +15,62 @@ p, .botaoroxo,.botaorosa, h4{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/*GERAIS*/
+.botaorosa{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: solid #1A1423 1px;
+    border-radius: 5px;
+    background-color: #E0002D;
+    text-transform: uppercase;
+    color: #F5F5F4;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botaorosa:hover{
+    background-color: #1A1423;
+}
+
+.botaoroxo{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: solid #F5F5F4 1px;
+    border-radius: 5px;
+    background-color: #1A1423;
+    text-transform: uppercase;
+    color: #F5F5F4;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botaoroxo:hover{
+    border: solid #1A1423 1px;
+    background-color: #F5F5F4;
+    color: #1A1423;
+}
+
+.tchau{
+    display: none;
+}
+
+.titleblock{
+    width: 100%;
+    display: block;
+}
+
 .mainormal{
     width: 980px;
     margin: auto;
 }
 
-/*header*/
+/*HEADER*/
 
 header{
     width: 100%;
@@ -92,7 +132,18 @@ nav{
     display: block;
 }
 
-/*corpo da página*/
+/*FIM HEADER*/
+
+/*INICIO PÁGINA INDEX*/
+
+#poster{
+    height: 400px;
+    width: 100%;
+    background-image: url(/images/ARTISTAS.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 #companhia, #emcartaz{
     width: 980px;
     margin: auto;
@@ -108,19 +159,36 @@ nav{
 
 /*formatação peças*/
 
-#peças, #depoimentos{
+#pecas, #depoimentos{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 550px;
+    height: 530px;
     align-items: start;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     background-color: #A20021;
     color: #F5F5F4;
-    border: solid #A20021 5px;
+    margin-bottom: 100px;
+    position: relative;
 }
 
+#pecas p, #depoimentos p{
+    margin-top: 15px;
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+
+#pecas h3, #depoimentos h3{
+    margin-top: 15px;
+    font-size: 0.9em;
+    font-weight: medium;
+    line-height: 1.4em;
+}
+
+#pecas h2, #depoimentos h2{
+    padding-left: 240px;
+}
 
 .pecinhas, .depoimentinhos{
     display: flex;
@@ -130,10 +198,39 @@ nav{
     position: relative;
 }
 
-#botaobottom{
+.pecinhas p, .depoimentinhos p{
+    width: 200px;
+}
+
+#botaobottomp, #botaobottomd{
     position: absolute;
     align-self: self-end;
-    right: 100px;
+    right: 300px;
+    top: 560px;
+    margin-top: 20px;
+}
+
+
+/*definições mini-galeria*/
+.galery{
+    height: 640px;
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.galery img{
+    display: block;
+}
+
+.botaogaleria{
+    align-self: flex-end;
+    position: absolute;
+    top: 620px;
 }
 
 /*definições emcartaz index*/
@@ -160,10 +257,6 @@ nav{
 /*FIM PÁGINA INDEX*/
 
 /*INÍCIO PÁGINA EM CARTAZ*/
-.mainormal{
-    width: 980px;
-    margin: auto;
-}
 
 #articleindex{
     display: flex;
@@ -298,7 +391,7 @@ table{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     color: #e7e6e5;
     margin-top: 20px;
@@ -322,22 +415,43 @@ table{
 /*FIM PÁGINA DEPOIMENTOS*/
 
 /*INICIO PÁGINA REALIZAÇÕES*/
-.articlerealizacoes{
+.articlerealizacoes, .articlerealizacoesr{
     background-color: #A20021;
-    padding: 20px;
+    padding: 40px;
     display: flex;
+    align-items: flex-start;
     margin: 20px 0px;
     border-radius: 20px;
     color: #e7e6e5;
 }
 
-.articlerealizacoes section{
+.articlerealizacoesr{
+    background-color: #1A1423;
+}
+
+.articlerealizacoesr a{
+    color: #e7e6e5;
+    text-decoration: none;
+}
+
+.articlerealizacoesr a:hover{
+    color: #A20021;
+    text-decoration: none;
+}
+
+.articlerealizacoes section, .articlerealizacoesr section{
     line-height: 1.4em;
     padding: 0px 20px 0px 0px;
 }
 
-.articlerealizacoes section h3,h2{
+.articlerealizacoes section h3, .articlerealizacoes section h2, .articlerealizacoesr section h3,h2{
     margin: 10px 0px;
+}
+
+.articlerealizacoes section h3, .articlerealizacoesr section h3, .articlerealizacoesr a{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
 }
 
 /*FIM PÁGINA REALIZAÇÕES*/
@@ -407,121 +521,12 @@ table{
 .tchau{
     display: none;
 }
-/*FIM PEAGINA PEÇA*/
+/*FIM PAGINA PEÇA*/
 
-/*definições gerais*/
-.titleblock{
-    width: 100%;
-    display: block;
-}
-
-.tchau{
-    display: none;
-}
-
-/*GERAIS*/
-.botaorosa{
-    display: flex;
-    width: 100px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    border: solid #1A1423 1px;
-    border-radius: 5px;
-    background-color: #E0002D;
-    text-transform: uppercase;
-    color: #F5F5F4;
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-}
-
-.botaorosa:hover{
-    background-color: #1A1423;
-}
-
-.botaoroxo{
-    display: flex;
-    width: 100px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    border: solid #F5F5F4 1px;
-    border-radius: 5px;
-    background-color: #1A1423;
-    text-transform: uppercase;
-    color: #F5F5F4;
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-}
-
-.botaoroxo:hover{
-    border: solid #1A1423 1px;
-    background-color: #F5F5F4;
-    color: #1A1423;
-}
-
-.tchau{
-    display: none;
-}
-/*fim página index*/
-
-.galery{
-    background-color: red;
-    height: 640px;
-    width: 940px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-    text-align: center;
-}
-.galery > figure{
-    padding: 0px;
-    margin: 0px;
-    outline: 0px;
-    box-sizing: border-box;
-}
-
-.galery img{
-    display: block;
-}
-
-#titlepeças{
-    display: block;
-    width: 100%;
-}
-
-#peças{
-    display: flex;
-    flex-wrap: wrap;
-    width: 790px;
-    align-items: start;
-    position: relative;
-    justify-content: flex-end;
-    margin: auto;
-    gap: 20px;
-}
-
-a{
-    justify-self: flex-end;
-    position: relative;
-}
-
-.pecinhas{
-    display: flex;
-    flex-wrap: wrap;
-    width: 250px;
-}
-
-#minigaleria{
+/* #minigaleria{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
     height: 550px;
-}
-
-.tchau{
-    display: none;
-}
+} */

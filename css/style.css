@@ -41,6 +41,15 @@ header{
     padding: 10px;
 }
 
+.redessociais a:hover img{
+    transform: scale(1.2);
+}
+
+.redessociais menu{
+    list-style: none;
+    display: flex;
+}
+
 /*menu*/
 nav{
     background-color: #1A1423;

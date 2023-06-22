@@ -253,7 +253,7 @@ body > header nav{
 #botaopeca{
     align-self: flex-end;
     position: absolute;
-    bottom: 100px;
+    bottom: 61px;
 }
 /*FIM PÁGINA INDEX*/
 
@@ -342,8 +342,6 @@ table{
 
 /*definições ficha técnica e elenco*/
 .footerpeça{
-    background-color: var(--vermelho-escuro);
-    color: var(--branco);
     width: 100%;
     height: 550px;
     display: flex;
@@ -351,6 +349,19 @@ table{
     justify-content: center;
     padding: 20px;
     margin-bottom: 40px;
+}
+
+.footerpeça h2{
+    color: #E0002D;
+}
+
+#footeremcartaz{
+    background-color: var(--vermelho-escuro);
+    color: #e7e6e5;
+}
+
+#footeremcartaz h2{
+    color: #e7e6e5;
 }
 
 .fichatec{
@@ -482,6 +493,10 @@ table{
     color: #e7e6e5;
 }
 
+#realizacaoum{
+    margin-top: 50px;
+}
+
 .articlerealizacoesr{
     background-color: var(--roxo);
     padding: 40px;
@@ -497,7 +512,11 @@ table{
 }
 
 .articlerealizacoes section h3, .articlerealizacoes h2{
-    margin: 10px 0px;
+    margin: 5px 0px 10px 0px;
+}
+
+.articlerealizacoesr section h3, .articlerealizacoesr h2{
+    margin: 5px 0px 10px 0px;
 }
 
 .articlerealizacoes h3, .articlerealizacoesr h3{
@@ -522,6 +541,11 @@ table{
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    line-height: 25px;
+}
+
+.articlepeça p{
+    margin-bottom: 20px;
 }
 
 .footerpeçabranco{
@@ -539,14 +563,16 @@ table{
     background-color: var(--vermelho-escuro);
 }
 
+
 .album section{
     width: 940px;
-    height: 640px;
+    height: 520px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 
 .imagensdomeio{
     width: 300px;
@@ -593,7 +619,7 @@ table{
 .tchau{
     display: none;
 }
-/*FIM PEAGINA PEÇA*/
+/*FIM PAGINA PEÇA*/
 
 /*definições gerais*/
 .titleblock{

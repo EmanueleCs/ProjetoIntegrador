@@ -6,6 +6,10 @@
     --branco: #F5F5F4;
 }
 
+body{
+    background-color: var(--branco);
+}
+
 /*Classes decorativas*/
 
 .max-tam{

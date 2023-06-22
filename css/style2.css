@@ -8,6 +8,13 @@
 
 body{
     background-color: var(--branco);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p, ul > li{
+    font-size: 1.1em;
+    line-height: 1.4em;
+    text-indent: 1em;;
 }
 
 /*Classes decorativas*/
@@ -28,4 +35,105 @@ body{
 
 .caixaroxa{
     background-color: var(--roxo);
+}
+
+.fontsize2em{
+    font-size: 1.8em;
+}
+
+[class *= "up"]{
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 7px 0px;
+}
+
+[class *= "titlered"]{
+    color: var(--vermelho);
+}
+
+[class *= "titleyellow"]{
+    color: var(--amarelo);
+}
+
+.flutuar-a-direita .flutuante{
+    float: right;
+    padding: 30px;
+}
+
+.clear{
+    clear: both;
+}
+
+.relative{
+    position: relative;
+}
+
+/*INICIO PAGINA COMPAnhia*/
+
+main > article{
+    padding: 20px 0px;
+}
+
+.companhia .composicao{
+    position: relative;
+    height: 100%;
+}
+
+.companhia .introducao{
+    height: 450px;
+}
+
+.companhia .composicao #frente{
+    position: relative;
+    top: 35%;
+    left: 15%;
+    padding-left: 70px;
+}
+
+.companhia .composicao #tras{
+    position: absolute;
+    
+}
+
+.companhia .criacao{
+    margin-bottom: 100px;
+}
+
+.criadora .flutuante{
+    padding: 0;
+    padding-left: 20px;
+}
+
+.criadora{
+    padding-bottom: 80px;
+}
+
+.artistas{
+    padding-bottom: 240px;
+    padding-top: 50px;
+}
+
+.artistas h2{
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.companhia .caixaroxa{
+    padding: 25px 80px;
+}
+
+.companhia .caixaroxa h2{
+    color: var(--amarelo);
+
+}
+
+.companhia .caixaroxa ul{
+    list-style-position: inside;
+    padding: 10px 0px;
+}
+
+.companhia .caixaroxa .botaorosa{
+    border: 1px solid var(--branco);
+    position: absolute;
+    right: 0px;
 }

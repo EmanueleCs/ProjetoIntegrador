@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root{
+    --amarelo: #F58C14;
+    --roxo: #1A1423;
+    --vermelho: #E0002D;
+    --vermelho-escuro: #A20021;
+    --branco: #F5F5F4;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -31,7 +39,7 @@ header{
 }
 
 .redessociais{
-    background-color: #A20021;
+    background-color: var(--vermelho-escuro);
     padding: 10px;
     display: flex;
     justify-content: end;
@@ -51,8 +59,13 @@ header{
 }
 
 /*menu*/
-nav{
-    background-color: #1A1423;
+
+a{
+    text-decoration: none;
+}
+
+body > header nav{
+    background-color: var(--roxo);
     padding: 10px 50px;
     display: flex;
     flex-direction: row;
@@ -73,9 +86,8 @@ nav{
 }
 
 .dropdown-menu li a{
-    text-decoration: none;
     padding: 10px;
-    color: #E0002D;
+    color: var(--vermelho);
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -87,7 +99,7 @@ nav{
 
 .dropdown-menu menu li:hover menu{
     display: block;
-    background-color: #1A1423;
+    background-color: var(--roxo);
 }
 
 .dropdown-menu menu menu li a{
@@ -126,9 +138,9 @@ nav{
     align-items: start;
     justify-content: center;
     gap: 10px;
-    background-color: #A20021;
-    color: #F5F5F4;
-    border: solid #A20021 5px;
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+    border: solid var(--vermelho-escuro) 5px;
 }
 
 .pecinhas, .depoimentinhos{
@@ -227,8 +239,8 @@ nav{
 
 /*Tabela Em Cartaz*/
 table{
-    color: #F5F5F4;
-    background-color: #1A1423;
+    color: var(--branco);
+    background-color: var(--roxo);
     padding: 10px;
     text-transform: uppercase;
     width: 200px;
@@ -245,8 +257,8 @@ table{
 #titletabelona{
     height: 20px;
     font-size: 0.8em;
-    background-color: #F58C14;
-    color: #1A1423;
+    background-color: var(--amarelo);
+    color: var(--roxo);
     text-align: center;
     font-weight: bold;
 }
@@ -261,19 +273,19 @@ table{
 }
 
 .local{
-    color: #F58C14;
+    color: var(--amarelo);
     font-weight: normal;
     transform: rotate(180deg);
     writing-mode: vertical-lr;
     text-align: center;
-    border-left: solid 1px #F5F5F4;
+    border-left: solid 1px var(--branco);
     padding: 5px;
 }
 
 /*definições ficha técnica e elenco*/
 .footerpeça{
-    background-color: #A20021;
-    color: #F5F5F4;
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
     width: 100%;
     height: 550px;
     display: flex;
@@ -334,7 +346,7 @@ table{
 
 /*INICIO PÁGINA DEPOIMENTOS*/
 .atores{
-    background-color: #A20021;
+    background-color: var(--vermelho-escuro);
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -368,7 +380,7 @@ table{
 
 /*INICIO PÁGINA REALIZAÇÕES*/
 .articlerealizacoes{
-    background-color: #A20021;
+    background-color: var(--vermelho-escuro);
     padding: 40px;
     display: flex;
     margin: 20px 0px;
@@ -377,7 +389,7 @@ table{
 }
 
 .articlerealizacoesr{
-    background-color: #1A1423;
+    background-color: var(--roxo);
     padding: 40px;
     display: flex;
     margin: 20px 0px;
@@ -420,14 +432,14 @@ table{
 }
 
 .album{
-    color: #F5F5F4;
+    color: var(--branco);
     padding: 20px;
     width: 100%;
     margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #A20021;
+    background-color: var(--vermelho-escuro);
 }
 
 .album section{
@@ -495,17 +507,17 @@ table{
     height: 30px;
     justify-content: center;
     align-items: center;
-    border: solid #1A1423 1px;
+    border: solid var(--roxo) 1px;
     border-radius: 5px;
-    background-color: #E0002D;
+    background-color: var(--vermelho);
     text-transform: uppercase;
-    color: #F5F5F4;
+    color: var(--branco);
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
 }
 
 .botaorosa:hover{
-    background-color: #1A1423;
+    background-color: var(--roxo);
 }
 
 .botaoroxo{
@@ -514,21 +526,124 @@ table{
     height: 30px;
     justify-content: center;
     align-items: center;
-    border: solid #F5F5F4 1px;
+    border: solid var(--branco) 1px;
     border-radius: 5px;
-    background-color: #1A1423;
+    background-color: var(--roxo);
     text-transform: uppercase;
-    color: #F5F5F4;
+    color: var(--branco);
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
 }
 
 .botaoroxo:hover{
-    border: solid #1A1423 1px;
-    background-color: #F5F5F4;
-    color: #1A1423;
+    border: solid var(--roxo) 1px;
+    background-color: var(--branco);
+    color: var(--roxo);
 }
 
 .tchau{
     display: none;
 }
+
+/** Footer da página **/
+
+body > footer{
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-size: 0.8em;
+}
+
+body > footer a{
+    color: var(--branco);
+}
+
+footer #container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0px 10px;
+}
+
+footer #container section{
+    width: 460px;
+    margin-bottom: 50px;
+}
+
+footer #container aside{
+    width: 860px;
+}
+
+    /*Mapa do site*/
+
+    #mapadosite h4{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: var(--vermelho);
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 15px 0px;
+    }
+
+    #mapadosite > nav > menu{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    columns: 2;
+    }
+
+    #mapadosite > nav > menu li{
+    line-height: 1.9em;
+    }
+
+    #mapadosite > nav > menu > li > menu{
+    margin-left: 20px;
+    }
+
+    #mapadosite a:hover{
+        text-decoration: underline;
+    }
+
+    /*Imagens decorativas */
+
+    .logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    height: 320px;
+    }
+
+    .logos img{
+    border-radius: 50%;
+    }
+
+    footer{
+    position: relative;
+    }
+
+    footer .redessociais{
+    padding: 0px 10px;
+    position: absolute;
+    bottom: 60px;
+    background-color: transparent;
+    }
+
+    .redessociais menu{
+    gap: 14px;
+    }
+
+    .redessociais img{
+    padding: 0px 10px;
+    position: relative;
+    }
+
+    /*Direitos */
+
+    body > footer > aside{
+    background-color: var(--vermelho-escuro);
+    padding: 12px;
+    text-align: center;
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: normal;
+    }

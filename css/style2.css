@@ -8,10 +8,18 @@
 
 /*Classes decorativas*/
 
+.max-tam{
+    width: 980px;
+    margin: auto;
+}
+
+[class *= "caixa"]{
+    padding: 40px;
+    color: var(--branco);
+}
+
 .caixavermelha{
     background-color: var(--vermelho-escuro);
-    width: 980px;
-    
 }
 
 .caixaroxa{

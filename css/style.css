@@ -148,9 +148,14 @@ body > header nav{
     font-family: 'Oswald', sans-serif;
 }
 
+body > header nav > *{
+    flex-grow: 1;
+}
+
 .dropdown-menu menu{
     list-style-type: none;
     padding: 0;
+    z-index: 2;
 }
 
 .dropdown-menu li{
@@ -166,6 +171,12 @@ body > header nav{
     font-weight: bold;
 }
 
+.dropdown-menu > menu > li> a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .dropdown{
     display: none;
     position: absolute;
@@ -178,11 +189,18 @@ body > header nav{
 
 .dropdown .dropdown{
     left: 100%;
-    bottom: -40px;
+    bottom: 0px;
 }
+
+.dropdown
 
 .dropdown-menu menu menu li a{
     display: block;
+}
+
+.menu{
+    height: 122px;
+    display: flex;
 }
 
 /*PÁGINA INDEX*/

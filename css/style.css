@@ -101,6 +101,10 @@ figcaption{
     margin: auto;
 }
 
+.inline{
+    display: inline-block;
+}
+
 /*header*/
 
 header{
@@ -167,7 +171,7 @@ body > header nav{
     position: absolute;
 }
 
-.dropdown-menu menu li:hover menu{
+.dropdown-menu menu li:hover > menu{
     display: block;
     background-color: var(--roxo);
 }
@@ -1034,3 +1038,151 @@ footer #container aside{
         padding: 20px;
     }
 
+    /*Inicio da página quem somos*/
+
+    .quemsomos{
+        padding: 60px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .quemsomos .caixavermelha{
+        border-radius: 30px;
+        display: flex;
+    }
+
+    .quemsomos .caixavermelha hgroup{
+        font-size: 1.4em;
+    }
+
+    .quemsomos .caixavermelha > section{
+        width: 60%;
+    }
+
+    .quemsomos hgroup p{
+        text-indent: 0;
+        padding: 0;
+    }
+
+    .quemsomos hgroup h2{
+        margin: 3px 0px;
+    }
+
+    .funcoes h3{
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: capitalize;
+    }
+
+    .quemsomos .funcoes{
+        display: flex;
+        align-items: first baseline;
+    }
+
+    .funcoes p{
+        text-indent: 0px;
+    }
+
+    .quemsomos .paginas menu{
+        background-color: var(--branco);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px;
+    }
+
+    .quemsomos .paginas li{
+        display: flex;
+    }
+
+    .quemsomos .paginas a{
+        flex-grow: 1;
+        display: flex;
+        height: 40px;
+        color: var(--roxo);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .quemsomos .paginas a:hover, .quemsomos .paginas p:hover{
+        background-color: var(--roxo);
+        color: var(--branco);
+    }
+
+    .quemsomos .paginas h4{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--amarelo);
+        text-align: center;
+        color: var(--roxo);
+        margin-top: 20px;
+    }
+
+    .quemsomos aside{
+        padding: 0px;
+        padding-left: 50px;
+        display: flex;
+    }
+
+    .quemsomos img{
+        flex-grow: 1;
+    }
+
+
+    .quemsomos .sobre{
+        font-family: 'Ubunto', sans-serif;
+        text-transform: capitalize;
+        margin: 8px 0px;
+    }
+
+    /* INICIO DA PAGINA FALE CONOSCO*/
+
+    .faleconosco{
+        margin: 30px auto 60px;
+    }
+
+    .faleconosco .caixaroxa{
+        display: flex;
+        padding: 0;
+    }
+
+    .faleconosco img{
+        display: block;
+    }
+
+    .faleconosco .caixaroxa form{
+        padding: 40px 50px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    .faleconosco .caixaroxa form input, form textarea{
+        all: unset;
+        background-color: var(--branco);
+        padding: 10px;
+        font-size: 1.1em;
+        color: black;
+    }
+
+    form textarea{
+        height: 150px;
+    }
+
+    [type="submit"]{
+        width: 100%;
+        height: 2.5em;
+        border: 1px solid white;
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 10px;
+    }
+
+    .faleconosco .caixaroxa h4{
+        font-size: 1.6em;
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 10px;
+        text-align: center;
+    }

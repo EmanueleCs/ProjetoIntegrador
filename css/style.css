@@ -14,6 +14,71 @@
     box-sizing: border-box;
 }
 
+
+
+body{
+    background-color: var(--branco);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p, ul > li{
+    font-size: 1.1em;
+    line-height: 1.4em;
+    text-indent: 1em;;
+}
+
+/*Classes decorativas*/
+
+.max-tam{
+    width: 980px;
+    margin: auto;
+}
+
+[class *= "caixa"]{
+    padding: 40px;
+    color: var(--branco);
+}
+
+.caixavermelha{
+    background-color: var(--vermelho-escuro);
+}
+
+.caixaroxa{
+    background-color: var(--roxo);
+}
+
+.fontsize2em{
+    font-size: 1.8em;
+}
+
+[class *= "up"]{
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 7px 0px;
+}
+
+[class *= "titlered"]{
+    color: var(--vermelho);
+}
+
+[class *= "titleyellow"]{
+    color: var(--amarelo);
+}
+
+main .flutuar-a-direita .flutuante{
+    float: right;
+    padding: 30px;
+}
+
+.clear{
+    clear: both;
+}
+
+.relative{
+    position: relative;
+}
+
+
 .tamanhomax{
     width: 980px;
 }
@@ -568,15 +633,23 @@ table{
     width: 940px;
     height: 520px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.imagem-primeira{
+    grid-row: 1/3;
 }
 
 
 .imagensdomeio{
     width: 300px;
     height: 200px;
+}
+
+.imagemlateral{
+    grid-column: 2/4;
 }
 
 #fotos{
@@ -779,69 +852,6 @@ footer #container aside{
     font-weight: normal;
     }
 
-
-    body{
-        background-color: var(--branco);
-        font-family: 'Ubuntu', sans-serif;
-    }
-    
-    p, ul > li{
-        font-size: 1.1em;
-        line-height: 1.4em;
-        text-indent: 1em;;
-    }
-    
-    /*Classes decorativas*/
-    
-    .max-tam{
-        width: 980px;
-        margin: auto;
-    }
-    
-    [class *= "caixa"]{
-        padding: 40px;
-        color: var(--branco);
-    }
-    
-    .caixavermelha{
-        background-color: var(--vermelho-escuro);
-    }
-    
-    .caixaroxa{
-        background-color: var(--roxo);
-    }
-    
-    .fontsize2em{
-        font-size: 1.8em;
-    }
-    
-    [class *= "up"]{
-        text-transform: uppercase;
-        font-size: 2em;
-        margin: 7px 0px;
-    }
-    
-    [class *= "titlered"]{
-        color: var(--vermelho);
-    }
-    
-    [class *= "titleyellow"]{
-        color: var(--amarelo);
-    }
-    
-    .flutuar-a-direita .flutuante{
-        float: right;
-        padding: 30px;
-    }
-    
-    .clear{
-        clear: both;
-    }
-    
-    .relative{
-        position: relative;
-    }
-    
     /*INICIO PAGINA COMPAnhia*/
     
     main > article{
@@ -917,9 +927,10 @@ footer #container aside{
         flex-wrap: wrap;
         margin-top: 50px;
         justify-content: space-between;
-        gap: 50px;
+        column-gap: 50px;
         font-size: 0.8em;
         line-height: 1.3em;
+        padding-bottom: 50px;
     }
     
     .noticias-resumo h2{
@@ -931,6 +942,8 @@ footer #container aside{
         font-weight: normal;
         text-transform: capitalize;
         font-size: 1.5em;
+        display: block;
+        height: 20px;
     }
     
     .companhia .noticias-resumo section{
@@ -939,8 +952,17 @@ footer #container aside{
         max-width: calc(33% - 50px);
     }
     
-    .noticias-resumo .botaorosa{
+    .noticias-resumo .botaorosa, .livro-resumo .botaorosa{
         bottom: 0;
+    }
+
+    .livro-resumo{
+        padding-bottom: 100px;
+    }
+
+    .livro-resumo img.flutuante{
+        padding: 0;
+        padding-left: 50px;
     }
     
     /*INICIO PAGINA NOTICIAS*/
@@ -948,3 +970,38 @@ footer #container aside{
     .noticias .intro{
         columns: 2;
     }
+
+    .card-noticia{
+        padding: 10px 15px;
+        margin-bottom: 30px;
+        height: 175px;
+
+    }
+
+    .card-noticia p{
+        text-indent: 0;
+    }
+
+    .flutuante-esquerda{
+        float: left;
+        margin: 0;
+        padding-right: 30px;
+    }
+
+    .card-noticia a{
+        color: white;
+        text-decoration: underline;
+    }
+
+    .card-noticia h3{
+        margin: 5px;
+    }
+
+    .noticias-intro{
+        margin-bottom: 40px;
+    }
+
+    .mar-b{
+        margin-bottom: 150px;
+    }
+

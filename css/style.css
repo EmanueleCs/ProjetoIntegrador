@@ -885,13 +885,26 @@ footer #container aside{
     
     .criadora .flutuante{
         padding: 0;
-        padding-left: 20px;
+        padding-left: 10px;
+    }
+
+    #lisa{
+        padding: 0;
+        padding-left: 10px;
+        transform: translateY(-3%);
     }
     
     .criadora{
-        padding-bottom: 80px;
+        padding-bottom: 110px;
+        line-height: 1.3em;
     }
     
+    .criadora h3{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
     .artistas{
         padding-bottom: 240px;
         padding-top: 50px;

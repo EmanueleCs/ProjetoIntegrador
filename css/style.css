@@ -176,6 +176,11 @@ body > header nav{
     background-color: var(--roxo);
 }
 
+.dropdown .dropdown{
+    left: 100%;
+    bottom: -40px;
+}
+
 .dropdown-menu menu menu li a{
     display: block;
 }

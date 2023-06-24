@@ -543,6 +543,22 @@ table{
     margin: 20px 0px;
 }
 
+.atores > section > *:first-child{
+    display: none;
+}
+
+.atores > section h4{
+    display: none;
+}
+
+.atores *:nth-child(2), .atores *:nth-child(3){
+    text-indent: 0px;
+}
+
+.atores *:nth-child(4){
+    padding: 20px 0px;
+}
+
 #espacoentrecef{
     margin-top: 60px;
 }

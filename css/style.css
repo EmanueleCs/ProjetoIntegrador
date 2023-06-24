@@ -1198,7 +1198,7 @@ footer #container aside{
         justify-content: space-between;
     }
 
-    .faleconosco .caixaroxa form input, form textarea{
+    .faleconosco .caixaroxa form [type="text"], form textarea{
         all: unset;
         background-color: var(--branco);
         padding: 10px;
@@ -1210,7 +1210,7 @@ footer #container aside{
         height: 150px;
     }
 
-    [type="submit"]{
+    .faleconosco #botao{
         width: 100%;
         height: 2.5em;
         border: 1px solid white;
